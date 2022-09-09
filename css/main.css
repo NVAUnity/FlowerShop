@@ -1,0 +1,220 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+:root {
+    --main-yellow: #FFBB56;
+    --discount-price: #FFC37C;
+    --primary-color: #B08888;
+    --font-gray-color: rgba(0, 0, 0, 0.4);
+    --background-main-grey: #EFEFEF;
+    --background-under-yellow: #FFF3E9;
+    --background-under-blue: #E9F7FF;
+    --background-under-green: #E9FFF2;
+    --border-radius-1: 16px;
+    --border-radius-2: 10px;
+    --border-radius-3: 8px
+}
+discountPrice {
+    border-radius: 3px;
+    background-color: var(--discount-price);
+    color: #fff;
+    padding: 0 1px;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.container {
+    max-width: 375px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 0;
+}
+.btn__back {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.header__title {
+    font-weight: 700;
+    font-size: 28px;
+    max-width: 200px;
+    padding: 4px 0;
+}
+.selector__content {
+    margin: 24px 0 8px;
+    overflow-y: auto;
+}
+.selector--wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    min-width: 391px;
+}
+.selector--item {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--font-gray-color);
+    padding: 8px 12px 9px;
+    background-color: var(--background-main-grey);
+    border-radius: var(--border-radius-2);
+    transition: .3s all ease;
+}
+.selector--item:hover,
+.selector--item:active,
+.selector--item.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.selector__content::-webkit-scrollbar {
+    width: 0px;
+}
+.sorting {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--font-gray-color);
+    column-gap: 12px;
+    margin-bottom: 21px;
+}
+
+/* Assortment */
+
+.assortment {
+    padding-bottom: 40px;
+}
+a .assortment__content--item {
+    color:#000;
+}
+.assortment__content--item {
+    display: flex;
+    align-items:flex-end;
+    column-gap: 16px;
+    margin-bottom: 24px;
+    height: 93px;
+}
+.assortment__picture {
+    width: 113px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border-radius: var(--border-radius-3);
+    padding: 0 9px;
+}
+.assortment__picture--img {
+    position: relative;
+    top: 22px;
+}
+.assortment__like {
+    width: 22px;
+    height: 22px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: var(--border-radius-3);
+    position: relative;
+    bottom: 2px;
+    left: 41px;
+}
+.assortment__description--title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+.assortment__description--title h1 {
+    font-weight: 700;
+    font-size: 15px;
+}
+.assortment__description--rating {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--main-yellow);
+    column-gap: 4px;
+}
+.assortment__height {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--font-gray-color);
+    margin-bottom: 15px;
+}
+.price {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/* Ad */
+
+.ad {
+    width: 100%;
+    height: 89px;
+    padding: 24px 0 25px 27px;
+    background: linear-gradient(90deg, #CEC6FF 0%, #E4E5FF 0%, #FFEBD4 100%);
+    border-radius: var(--border-radius-2);
+    display: flex;
+    align-items: flex-end;
+    margin: 5px 0 20px;
+}
+.ad__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.ad__text h1 {
+    font-weight: 700;
+    font-size: 14px;
+}
+.ad__text p {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--font-gray-color);
+}
+.ad__img {
+    height: 101px;
+    width: 101px;
+    position: relative;
+    top: 22px;
+}
+
+
+/* Nav */
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+}
+.nav__content {
+    display: flex;
+    align-items: center;
+    column-gap: 67px;
+    padding: 12px 0;
+}
+.nav__link {
+    transition: all .3s ease;
+}
+.nav__link.active,
+.nav__link:hover,
+.nav__link:active {
+    filter:brightness(0);
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerShop</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <button class="btn__back">
+                    <img src="./img/arrow__icon.svg" alt="">
+                    <p>Все растения</p>
+                </button>
+                <button class="btn__search">
+                        <img src="./img/search__icon.svg" alt="">
+                </button>
+            </div>
+            <h1 class="header__title">Комнатные растения</h1>
+        </div>
+    </header>
+    <main>
+        <section class="selector">
+            <div class="container">
+                <div class="selector__content">
+                    <div class="selector--wrapper">
+                        <button class="selector--item all">Все</button>
+                        <button class="selector--item active">Суккуленты</button>
+                        <button class="selector--item">В горшках</button>
+                        <button class="selector--item">Сухоцветы</button>
+                    </div>
+                </div>
+                <div class="sorting">
+                    <p>По популярности</p>
+                    <img src="./img/arrow__icon--down.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="assortment">
+            <div class="container">
+                <div class="assortment__content">
+                    <div class="assortment__content--item">
+                        <div class="assortment__picture" style="background-color: var(--background-under-blue)">
+                            <img src="./img/photo__adromiskus.png" alt="" class="assortment__picture--img">
+                            <div class="assortment__like">
+                                <img src="./img/heart__icon--grey.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="assortment__description">
+                            <div class="assortment__description--title">
+                                <h1>Адромискус</h1>
+                                <div class="assortment__description--rating">
+                                    <img src="./img/star__icon.svg" alt="">
+                                    <p>4,5</p>
+                                </div>
+                            </div>
+                            <h2 class="assortment__height">от 16 см</h2>
+                            <h3 class="price">990 ₽</h3>
+                        </div>
+                    </div>
+                    <a href="./assortitem.html">
+                        <div class="assortment__content--item">
+                            <div class="assortment__picture" style="background-color: var(--background-under-yellow)">
+                                <img src="./img/photo__eheveriya.png" alt="" class="assortment__picture--img">
+                                <div class="assortment__like">
+                                    <img src="./img/heart__icon--grey.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="assortment__description">
+                                <div class="assortment__description--title">
+                                    <h1>Эхеверия</h1>
+                                    <div class="assortment__description--rating">
+                                        <img src="./img/star__icon.svg" alt="">
+                                        <p>4,8</p>
+                                    </div>
+                                </div>
+                                <h2 class="assortment__height">от 18 см</h2>
+                                <h3 class="price">1290 ₽</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="ad">
+                        <div class="ad__text">
+                            <h1>Бесплатная доставка</h1>
+                            <p>При заказе <discountPrice>от 1990 ₽</discountPrice></p>
+                        </div>
+                        <img src="./img/people__icon.png" alt="" class="ad__img">
+                    </div>
+                    <div class="assortment__content--item">
+                        <div class="assortment__picture" style="background-color: var(--background-under-green)">
+                            <img src="./img/photo__havortiya.png" alt="" class="assortment__picture--img">
+                            <div class="assortment__like">
+                                <img src="./img/heart__icon--grey.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="assortment__description">
+                            <div class="assortment__description--title">
+                                <h1>Хавортия</h1>
+                                <div class="assortment__description--rating">
+                                    <img src="./img/star__icon.svg" alt="">
+                                    <p>4,2</p>
+                                </div>
+                            </div>
+                            <h2 class="assortment__height">от 19 см</h2>
+                            <h3 class="price">1490 ₽</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__content">
+                    <img src="./img/header__burger--item.svg" alt="" class="nav__link active">
+                    <img src="./img/header__cart--icon.svg" alt="" class="nav__link">
+                    <img src="./img/header__heart--icon.svg" alt="" class="nav__link">
+                    <img src="./img/header__people--icon.svg" alt="" class="nav__link">
+                </div>
+            </div>
+        </nav>
+    </main>
+</body>
+</html>
